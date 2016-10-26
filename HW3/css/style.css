@@ -12,8 +12,8 @@ body {
 .wrapper {
 	background-color: white;
 	margin: auto;
-	padding-left:  47px;
-	padding-right: 48px;
+	padding-left:  5%;
+	padding-right: 5%;
 	padding-top: 50px;
 	padding-bottom: 60px;
 	width: 966px;
@@ -25,14 +25,10 @@ body {
 .headermenu {
 	background: linear-gradient(to top, #444343, #5e5e5e);
 	height: 40px;
-	width: 966px;
+	width: 100%;
 	margin-top: 40px;
 	margin-bottom: 40px;
 	font-size: 15px;
-}
-
-.headermenu ul {
-	width: 600px;
 }
 
 .headermenu li {
@@ -58,11 +54,11 @@ body {
 
 .sidebar {
 	display: inline-block;
-	width: 238px;
+	width: 24%;
 	float: left;
 	border: 1px solid #c8c8c8;
 	border-bottom: none;
-	margin-right: 48px;
+	margin-right: 5%;
 }
 
 .sidebar li {
@@ -82,6 +78,7 @@ body {
 
 .sidebar a:hover {
 	background-color: #f9f9f9;
+	padding-left: 36px;
 }
 
 .sidebar a:focus {
@@ -92,7 +89,6 @@ body {
 	background-image: url('../img/bicycle.jpg');
 	background-repeat: no-repeat;
 	background-position: center;
-	width: 676px;
 	height: 398px;
 	border: 1px solid #c8c8c8;
 	line-height:  398px;
@@ -101,7 +97,7 @@ body {
 
 .article {
 	display:  inline-block;
-	width: 70%;
+	width: 676px;
 }
 
 .description {
