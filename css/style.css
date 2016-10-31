@@ -1,0 +1,229 @@
+@font-face {
+	font-family: 'Tahoma';
+	src: url('../fonts/Tahoma.ttf');
+}
+
+@font-face {
+	font-family: 'Tahoma Bold';
+	src: url('../fonts/Tahoma Bold.ttf');
+}
+
+body {
+	font-family: Tahoma;
+	font-size: 14px;
+	background: url('../img/background.png');
+	background-repeat: repeat;
+	text-align: center;
+}
+
+.wrapper {
+	box-sizing: border-box;
+	width: 1000px;
+	height: 988px;
+	overflow: hidden;
+	margin: auto;
+	background-color: #fff;
+	box-shadow: 0px 3px 0px 0px rgba(3, 29, 40, 1);
+	box-shadow: 0px 3px 7px 0px rgba(3, 29, 40, 1);
+
+}
+
+.header {
+	height: 175px;
+	position: relative;
+}
+
+.logo {
+	position: absolute;
+	box-sizing: border-box;
+	background: url('../img/logo.png');
+	width: 283px;
+	height: 164px;
+	top: 11px;
+	left: 37px;
+	font-size: 12px;
+	color: #128aa7;
+	padding-top: 100px;
+	padding-left: 72px;
+	text-align: left;
+}
+
+.contacts {
+	width: 125px;
+	text-align: left;
+	position: absolute;
+	right: 32px;
+	top: 11px;
+	color: #128aa7;
+	font-size: 12px;
+	line-height: 16px;
+	opacity: 0.8;
+}
+
+.contacts a {
+	display: inline-block;
+	text-decoration: none;
+	color: #128aa7;
+}
+
+.countriesMenu {
+	float: right;
+	width: 320px;
+	font-size: 9px;
+	position: absolute;
+	right: 30px;
+	bottom: 10px;
+	background-color: #fff;
+}
+
+.countriesMenu > li {
+	display: inline-block;
+}
+
+.countriesMenu a {
+	height: 52px;
+	width: 50px;
+	display: inline-block;
+	text-decoration: underline;
+	color: #128aa7;
+	text-align: center;
+	word-wrap: normal;
+}
+
+.mainphoto {
+	background: url('../img/photo.png');
+	background-repeat: no-repeat;
+	background-position: bottom;
+	width: 1000px;
+	height: 412px;
+	clear: both;
+}
+
+.mainMenu {
+	background: linear-gradient(to top, #303030, #373737);
+	height: 30px;
+	border-bottom: 1px solid #000;
+
+}
+
+.triangle {
+	font-size: 6px;
+}
+
+.mainMenu>li {
+	position: relative;
+	display: inline-block;
+	float: left;
+	margin-right: 0;
+	margin-left: 47px;
+	height: 30px;
+}
+
+.mainMenu>li a {
+	text-decoration: none;
+	color: #fff;
+	line-height: 30px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+/* .mainMenu::after {
+	content: '';
+	display: block;
+	clear: both;
+} */
+
+.submenu {
+	display: none;
+	width: 150px;
+	position: absolute;
+	top: 30px;
+	background-color: #303030;
+	border-top: 1px solid #000;
+	box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.submenu a {
+	display: block;
+	padding-left: 10px;
+	line-height: 30px;
+	text-align: left;
+}
+
+.mainMenu li:hover .submenu {
+	display: block;
+}
+
+/* .header::after {
+	content: '';
+	display: block;
+	clear: both;
+} */
+
+.content {
+}
+
+.leftColumn {
+	box-sizing: border-box;
+	color: #424c43;
+	font-size: 14px;
+	line-height: 24px;
+	text-align: left;
+	padding-left: 16px;
+	width: 20.8%;
+	background-color: #edeef0;
+	float: left;
+	border-left: 1px solid #c7cacf;
+	border-right: 1px solid #c7cacf;
+	height: 20000px;
+}
+
+.centerColumn {
+	box-sizing: border-box;
+	color: #424c43;
+	font-size: 14px;
+	line-height: 24px;
+	text-align: left;
+	padding-left: 16px;
+	width: 58.4%;
+	float: left;
+	height: 20000px;
+}
+
+.rightColumn {
+	box-sizing: border-box;
+	color: #424c43;
+	font-size: 14px;
+	line-height: 24px;
+	text-align: left;
+	padding-left: 16px;
+	width: 20.8%;
+	background-color: #edeef0;
+	float: right;
+	border-left: 1px solid #c7cacf;
+	border-right: 1px solid #c7cacf;
+	height: 20000px;
+}
+
+.subheader {
+	font: 18px /* 'Tahoma Bold' */;
+	text-align: center;
+	color: #000;
+}
+
+.content::after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.copyright {
+	margin-top: 12px;
+	margin-bottom: 13px;
+	color: #fff;
+	font-size: 12px;
+	opacity: 0.8;
+}
+
+
+
