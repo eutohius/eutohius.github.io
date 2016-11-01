@@ -130,11 +130,11 @@ body {
 	padding-right: 10px;
 }
 
-/* .mainMenu::after {
+.mainMenu::after {
 	content: '';
-	display: block;
 	clear: both;
-} */
+	display: block;
+}
 
 .submenu {
 	display: none;
@@ -156,12 +156,6 @@ body {
 .mainMenu li:hover .submenu {
 	display: block;
 }
-
-/* .header::after {
-	content: '';
-	display: block;
-	clear: both;
-} */
 
 .content {
 }
@@ -221,7 +215,7 @@ body {
 
 .copyright {
 	margin-top: 12px;
-	margin-bottom: 13px;
+	margin-bottom: 10px;
 	color: #fff;
 	font-size: 12px;
 	opacity: 0.8;
