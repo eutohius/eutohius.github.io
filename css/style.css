@@ -4,22 +4,21 @@
 }
 
 body {
-	font-family: Tahoma;
-	font-size: 14px;
 	background: url('../img/background.png');
 	background-repeat: repeat;
+	font-family: Tahoma;
+	font-size: 14px;
 	text-align: center;
 }
 
 .wrapper {
-	box-sizing: border-box;
-	width: 1000px;
-	height: 988px;
-	overflow: hidden;
-	margin: auto;
 	background-color: #fff;
 	box-shadow: 0px 3px 8px 0px rgba(3, 29, 40, 1);
-
+	box-sizing: border-box;
+	height: 988px;
+	margin: auto;
+	overflow: hidden;
+	width: 1000px;
 }
 
 .header {
@@ -28,52 +27,53 @@ body {
 }
 
 .header::after {
-	content: '';
 	clear: both;
+	content: '';
 	display: block;
 }
 
 .logo {
-	position: absolute;
 	box-sizing: border-box;
 	background: url('../img/logo.png');
-	width: 283px;
-	height: 164px;
-	top: 11px;
-	left: 37px;
-	font-size: 12px;
 	color: #128aa7;
+	font-size: 12px;
+	height: 164px;
+	left: 37px;
 	padding-top: 100px;
 	padding-left: 72px;
+	position: absolute;
 	text-align: left;
+	top: 11px;
+	width: 283px;
 }
 
 .contacts {
-	width: 125px;
-	text-align: left;
-	position: absolute;
-	right: 32px;
-	top: 11px;
 	color: #128aa7;
 	font-size: 12px;
 	line-height: 16px;
 	opacity: 0.8;
+	position: absolute;
+	right: 32px;
+	text-align: left;
+	top: 11px;
+	width: 125px;
+
 }
 
 .contacts a {
+	color: #128aa7;
 	display: inline-block;
 	text-decoration: none;
-	color: #128aa7;
 }
 
 .countriesMenu {
+	background-color: #fff;
+	bottom: 10px;
 	float: right;
-	width: 350px;
 	font-size: 9px;
 	position: absolute;
 	right: 30px;
-	bottom: 10px;
-	background-color: #fff;
+	width: 350px;
 }
 
 .countriesMenu > li {
@@ -81,33 +81,34 @@ body {
 }
 
 .countriesMenu a {
-	height: 52px;
-	width: 50px;
-	display: inline-block;
-	text-decoration: underline;
 	color: #128aa7;
-	text-align: center;
+	display: inline-block;
 	float: right;
+	height: 52px;
+	text-align: center;
+	text-decoration: underline;
+	width: 50px;
 }
 
 .mainphoto {
 	background: url('../img/photo.png');
-	background-repeat: no-repeat;
 	background-position: bottom;
-	width: 1000px;
-	height: 235px;
-	clear: both;
+	background-repeat: no-repeat;
 	border-bottom: 1px solid #128aa7;
 	border-top: 1px solid #128aa7;
+	clear: both;
+	height: 235px;
+	width: 1000px;
+
 }
 
 .mainMenu {
 	background: linear-gradient(to top, #303030, #373737);
-	position: relative;
-	height: 30px;
 	border-bottom: 1px solid #000;
 	border-top: 1px solid #cacbcb;
 	box-shadow: 0px 1px 4px 0px rgba(85, 85, 85, 1);
+	height: 30px;
+	position: relative;
 }
 
 .triangle {
@@ -115,20 +116,20 @@ body {
 }
 
 .mainMenu>li {
-	position: relative;
 	display: inline-block;
 	float: left;
+	height: 30px;
 	margin-right: 0;
 	margin-left: 47px;
-	height: 30px;
+	position: relative;
 }
 
 .mainMenu>li a {
-	text-decoration: none;
 	color: #fff;
 	line-height: 30px;
 	padding-left: 10px;
 	padding-right: 10px;
+	text-decoration: none;
 }
 
 .mainMenu::after {
@@ -138,19 +139,19 @@ body {
 }
 
 .submenu {
-	display: none;
-	width: 150px;
-	position: absolute;
-	top: 30px;
 	background-color: #303030;
 	border-top: 1px solid #000;
 	box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.75);
+	display: none;
+	position: absolute;
+	top: 30px;
+	width: 150px;
 }
 
 .submenu a {
 	display: block;
-	padding-left: 10px;
 	line-height: 30px;
+	padding-left: 10px;
 	text-align: left;
 }
 
@@ -159,63 +160,63 @@ body {
 }
 
 .leftColumn {
+	background-color: #edeef0;
+	border-left: 1px solid #c7cacf;
+	border-right: 1px solid #c7cacf;
 	box-sizing: border-box;
 	color: #424c43;
+	float: left;
 	font-size: 14px;
+	height: 20000px;
 	line-height: 24px;
 	text-align: center;
 	width: 20.8%;
-	background-color: #edeef0;
-	float: left;
-	border-left: 1px solid #c7cacf;
-	border-right: 1px solid #c7cacf;
-	height: 20000px;
 }
 
 .centerColumn {
 	box-sizing: border-box;
 	color: #424c43;
+	float: left;
 	font-size: 14px;
+	height: 20000px;
 	line-height: 24px;
 	text-align: center;
 	width: 58.4%;
-	float: left;
-	height: 20000px;
 }
 
 .rightColumn {
+	background-color: #edeef0;
+	border-left: 1px solid #c7cacf;
+	border-right: 1px solid #c7cacf;
 	box-sizing: border-box;
 	color: #424c43;
+	float: right;
 	font-size: 14px;
+	height: 20000px;
 	line-height: 24px;
 	text-align: center;
 	width: 20.8%;
-	background-color: #edeef0;
-	float: right;
-	border-left: 1px solid #c7cacf;
-	border-right: 1px solid #c7cacf;
-	height: 20000px;
 }
 
 .subheader {
 	font-size: 18px;
 	font-weight: bold;
-	text-align: center;
 	padding-top: 13px;
 	padding-bottom: 5px;
+	text-align: center;
 }
 
 .content::after {
+	clear: both;
 	content: '';
 	display: block;
-	clear: both;
 }
 
 .copyright {
-	margin-top: 12px;
-	margin-bottom: 10px;
 	color: #fff;
 	font-size: 12px;
+	margin-top: 12px;
+	margin-bottom: 10px;
 	opacity: 0.8;
 }
 
