@@ -103,6 +103,7 @@ body {
 
 .mainMenu {
 	background: linear-gradient(to top, #303030, #373737);
+	position: relative;
 	height: 30px;
 	border-bottom: 1px solid #000;
 	border-top: 1px solid #cacbcb;
@@ -155,9 +156,6 @@ body {
 
 .mainMenu li:hover .submenu {
 	display: block;
-}
-
-.content {
 }
 
 .leftColumn {
