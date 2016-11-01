@@ -206,9 +206,9 @@ body {
 }
 
 .subheader {
-	font: 18px /* 'Tahoma Bold' */;
+	font-size: 18px;
 	text-align: center;
-	color: #000;
+	/*color: #000;*/
 }
 
 .content::after {
