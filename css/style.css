@@ -3,11 +3,6 @@
 	src: url('../fonts/Tahoma.ttf');
 }
 
-@font-face {
-	font-family: 'Tahoma Bold';
-	src: url('../fonts/Tahoma Bold.ttf');
-}
-
 body {
 	font-family: Tahoma;
 	font-size: 14px;
@@ -23,14 +18,19 @@ body {
 	overflow: hidden;
 	margin: auto;
 	background-color: #fff;
-	box-shadow: 0px 3px 0px 0px rgba(3, 29, 40, 1);
-	box-shadow: 0px 3px 7px 0px rgba(3, 29, 40, 1);
+	box-shadow: 0px 3px 8px 0px rgba(3, 29, 40, 1);
 
 }
 
 .header {
 	height: 175px;
 	position: relative;
+}
+
+.header::after {
+	content: '';
+	clear: both;
+	display: block;
 }
 
 .logo {
@@ -68,7 +68,7 @@ body {
 
 .countriesMenu {
 	float: right;
-	width: 320px;
+	width: 350px;
 	font-size: 9px;
 	position: absolute;
 	right: 30px;
@@ -87,7 +87,7 @@ body {
 	text-decoration: underline;
 	color: #128aa7;
 	text-align: center;
-	word-wrap: normal;
+	float: right;
 }
 
 .mainphoto {
@@ -95,15 +95,18 @@ body {
 	background-repeat: no-repeat;
 	background-position: bottom;
 	width: 1000px;
-	height: 412px;
+	height: 235px;
 	clear: both;
+	border-bottom: 1px solid #128aa7;
+	border-top: 1px solid #128aa7;
 }
 
 .mainMenu {
 	background: linear-gradient(to top, #303030, #373737);
 	height: 30px;
 	border-bottom: 1px solid #000;
-	box-shadow: 0px 1px 5px 0px rgba(3, 29, 40, 1);
+	border-top: 1px solid #cacbcb;
+	box-shadow: 0px 1px 4px 0px rgba(85, 85, 85, 1);
 }
 
 .triangle {
@@ -168,8 +171,7 @@ body {
 	color: #424c43;
 	font-size: 14px;
 	line-height: 24px;
-	text-align: left;
-	padding-left: 16px;
+	text-align: center;
 	width: 20.8%;
 	background-color: #edeef0;
 	float: left;
@@ -183,8 +185,7 @@ body {
 	color: #424c43;
 	font-size: 14px;
 	line-height: 24px;
-	text-align: left;
-	padding-left: 16px;
+	text-align: center;
 	width: 58.4%;
 	float: left;
 	height: 20000px;
@@ -195,8 +196,7 @@ body {
 	color: #424c43;
 	font-size: 14px;
 	line-height: 24px;
-	text-align: left;
-	padding-left: 16px;
+	text-align: center;
 	width: 20.8%;
 	background-color: #edeef0;
 	float: right;
@@ -207,8 +207,10 @@ body {
 
 .subheader {
 	font-size: 18px;
+	font-weight: bold;
 	text-align: center;
-	/*color: #000;*/
+	padding-top: 13px;
+	padding-bottom: 5px;
 }
 
 .content::after {
