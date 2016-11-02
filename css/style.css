@@ -173,6 +173,11 @@ body {
 	width: 20.8%;
 }
 
+.leftColumn p {
+	text-align: left;
+	padding-left: 15px;
+}
+
 .centerColumn {
 	box-sizing: border-box;
 	color: #424c43;
@@ -196,6 +201,11 @@ body {
 	line-height: 24px;
 	text-align: center;
 	width: 20.8%;
+}
+
+.rightColumn p {
+	text-align: left;
+	padding-left: 15px;
 }
 
 .subheader {
