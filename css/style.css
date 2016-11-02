@@ -176,6 +176,7 @@ body {
 .leftColumn p {
 	text-align: left;
 	padding-left: 15px;
+	text-wrap: nowrap;
 }
 
 .centerColumn {
