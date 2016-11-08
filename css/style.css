@@ -116,7 +116,6 @@ html {
 	font-size: 14px;
 	height: 549px;
 	margin-top: 2px;
-	
 }
 
 .formBody {
@@ -124,28 +123,61 @@ html {
 	margin: auto;
 }
 
-.formBody input {
-	border: 0 0 1px 0;
-	border-style: solid;
-	border-color: #4a4a49;
+fieldset {
+	padding-top: 20px;
+	text-align: center;
+}
+
+legend {
+	color: #999;
+	font-size: 14px;
+}
+
+.dataField {
+	background-color: #0f0f0f;
+	border-bottom: 1px solid #4a4a49;
+	border-left: none;
+	border-right: none;
+	border-top: none;
+	color: #ccc;
 	display: block;
+	font-size: 14px;
 	height: 35px;
 	margin-bottom: 20px;
+	padding: 0;
+	text-indent: 19px;
 	width: 100%;
 
 }
 
+.dataField:focus {
+	background-color: #1b5288;
+	border-bottom: 1px solid #699bcd;
+	box-shadow: 0px 0px 6px 5px #4a87af;
+	outline: none;
+}
+
 .facebook {
+	border: none;
 	height: 35px;
 	margin-bottom: 32px;
 	margin-top: 35px;
 	width: 100%;
+	background: url('../img/fb-login.png') center center no-repeat;
 }
 
-[type="submit"] {
-	width: 151px;
+.checkBox {
+	color: #ccc;
+	display: block;
+	font-size: 14px;
+	margin-bottom: 24px;
+	text-align: left;
+	vertical-align: bottom;
 }
 
+.checkBox input {
+	margin-right: 8px;
+}
 
 
 
