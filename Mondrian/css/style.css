@@ -38,6 +38,10 @@ tr:nth-child(8)>td {
 	height: 65px;
 }
 
+.double {
+	height: 170px;
+}
+
 .yellow {
 	background-color: #fff365;
 	border-bottom: 0;
