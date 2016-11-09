@@ -157,7 +157,7 @@ legend {
 .dataField:focus {
 	background-color: #1b5288;
 	border-bottom: 1px solid #699bcd;
-	box-shadow: 0px 0px 6px 5px #4a87af;
+	box-shadow: 0px 0px 6px 5px #4a87af, inset 0 2px 5px rgba(29,26,22,.2), inset 0 0 2px rgba(0,0,0,.1);
 	outline: none;
 }
 
