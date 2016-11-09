@@ -13,8 +13,8 @@ table {
 
 td {
 	border: 10px solid #000;
-	width: 14.28%;
 	box-sizing: border-box;
+	width: 14.28%;
 }
 
 td:first-child {
