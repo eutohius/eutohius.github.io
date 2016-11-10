@@ -14,7 +14,7 @@ html {
 	font-size: 14px;
 	height: 36px;
 	line-height: 36px;
-	overflow: scroll;
+	overflow: hidden;
 	position: fixed;
 	width: 100%;
 }
