@@ -32,8 +32,6 @@
     font-style: normal;
 }
 
-
-
 .clearfix::after {
 	overflow: hidden;
 	display: block;
@@ -91,7 +89,8 @@
 }
 
 .logo__dot {
-	background-image: url('../img/i-dot.png');
+	background-image: url('../img/spritesheet.png');
+	background-position: -207px -5px;
 	height: 8px;
 	left: 15px;
 	position: absolute;
@@ -149,7 +148,8 @@
 }
 
 .carousel__arrowLeft {
-	background-image: url('../img/arrow-left.png');
+	background-image: url('../img/spritesheet.png');
+	background-position: -5px -5px;
 	position: absolute;
 	width: 30px;
 	height: 42px;
@@ -158,7 +158,8 @@
 }
 
 .carousel__arrowRight {
-	background-image: url('../img/arrow-right.png');
+	background-image: url('../img/spritesheet.png');
+    background-position: -45px -5px;
 	position: absolute;
 	width: 30px;
 	height: 42px;
@@ -329,28 +330,48 @@
 	margin-right: -4px;
 }
 
-.article__pic {
+.article__picWrap {
+	position: relative;
 	float: left;
 	height: 100%;
 	width: 21%;
-	background-repeat: no-repeat;
+	
 	background-position: 9px 3px;
 }
 
-.article__pic_wrench {
-	background-image: url('../img/article-pic-wrench.png');
+.article__sprite {
+	position: absolute;
+	background-repeat: no-repeat;
+	background-image: url('../img/spritesheet.png');
+}
+
+.article__sprite_wrench {
+	top: 3px;
+	left: 9px;
+	width: 30px;
+    height: 31px;
+    background-position: -167px -5px;
+
 }
 
 .article__pic_comicSay {
-	background-image: url('../img/article-pic-comic.png');
-    background-position: 8px 5px;
     width: 21.3125%;
-
 }
 
-.article__pic_tune {
-	background-image: url('../img/article-pic-tune.png');
-	background-position: 8px 3px;
+.article__sprite_comicSay {
+	top: 5px;
+	left: 8px;
+	width: 33px;
+    height: 29px;
+	background-position: -85px -5px;
+}
+
+.article__sprite_tune {
+	top: 3px;
+	left: 8px;
+	width: 29px;
+    height: 31px;
+    background-position: -128px -5px;
 }
 
 .article__header {
@@ -430,12 +451,22 @@
 	height: 18.25rem;
 }
 
-.comment__photo {
+.comment__photoWrap {
+	position: relative;
 	width: 13%;
 	height: 100%;
 	float: left;
-	background: url('../img/comment-photo.png') no-repeat 0px 18px;
+}
 
+.comment__photo {
+	position: absolute;
+	top: 18px;
+	left: -1px;
+	width: 49px;
+    height: 49px;
+	background-position: -85px -46px;    
+	background-image: url('../img/spritesheet.png');
+    background-repeat: no-repeat;
 }
 
 .comment__header {
@@ -501,23 +532,34 @@
 
 .update {
 	line-height: 1.5rem;
-	padding-left: 4.125rem;
 	margin-bottom: 1.1875rem;
 	background-repeat: no-repeat;
 	background-position: 1px 0;
 }
 
-.update_top {
-	background-image: url('../img/update-1.png');
+.update__sprite {
+	background-image: url('../img/spritesheet.png');
+	width: 49px;
+    height: 49px;
+    margin-right: 17px;
+    display: inline-block;
+    float: left;
+}
+
+.update__sprite_top {
+	background-position: -166px -151px;
+}
+
+.update__sprite_middle {
+    background-position: -225px -151px;
+}
+
+.update__sprite_bottom{
+    background-position: -118px -210px;
 }
 
 .update_middle {
-	background-image: url('../img/update-2.png');
 	margin-bottom: 1rem;
-}
-
-.update_bottom {
-	background-image: url('../img/update-3.png');
 }
 
 .update__summary {
@@ -588,38 +630,44 @@
 .partners__logo_billabong {
 	width: 69px;
 	height: 64px;
-	background-image: url('../img/partner-billabong.png');
+	background-image: url('../img/spritesheet.png');
+	background-position: -5px -119px;
 }
 
 .partners__logo_dc {
 	width: 72px;
 	height: 64px;
-	background-image: url('../img/partner-dc.png');
+	background-image: url('../img/spritesheet.png');
+    background-position: -84px -119px;
 }
 
 .partners__logo_timber {
 	height: 65px;
 	width: 65px;
-	background-image: url('../img/partner-timber.png');
+	background-image: url('../img/spritesheet.png');
+    background-position: -231px -5px;
 }
 
 .partners__logo_awsm {	
 	width: 50px;
 	height: 63px;
-	background-image: url('../img/partner-awsm.png');
+	background-image: url('../img/spritesheet.png');
+	background-position: -144px -46px;
 }
 
 .partners__logo_rvca {
 	margin-top: 21px;
 	width: 103px;
 	height: 21px;
-	background-image: url('../img/partner-rvca.png');
+	background-image: url('../img/spritesheet.png');
+    background-position: -5px -193px;
 }
 
 .partners__logo_vonzipper {
 	width: 78px;
 	height: 61px;
-	background-image: url('../img/partner-vonzipper.png');
+	background-image: url('../img/spritesheet.png');
+    background-position: -204px -80px;
 	margin-top: 2px;
 }
 
