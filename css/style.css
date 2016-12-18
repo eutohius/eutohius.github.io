@@ -1098,7 +1098,7 @@ html {
 	}
 }
 
-@media (max-width: 480px) and (min-width: 321px) {
+@media only screen and (max-width: 480px) and (min-width: 321px) {
 	.header, 
 	.carousel, 
 	.articlesBlock, 
@@ -1107,6 +1107,10 @@ html {
 	.preFoot, 
 	.footer {
 		width: 100%;
+	}
+
+	.headerWrapper {
+		height: 34.3125rem;
 	}
 
 	.logo {
@@ -1170,6 +1174,10 @@ html {
 		padding-top: .75rem;
 	}
 
+	.headline__menu:hover .menu__link {
+		width: 100%;
+	}
+
 	.menu__item:last-child {
 		border-bottom: none;
 	}
@@ -1188,6 +1196,126 @@ html {
 	}
 
 	.carouselWrapper {
+		height: 15.375rem;
 		top: 12.6875rem;
+	}
+
+	.carousel__article {
+		margin-left: 8.3333333333333%;
+		padding-top: 5.8125rem;
+		width: 42%;
+	}
+
+	.carousel__headline {
+		font-size: 2.25rem;
+	}
+
+	.carousel__subheadline {
+		font-size: 1.125rem;
+		height: 1.75rem;
+		line-height: 1.75rem;
+	}
+
+	.carousel__text {
+		display: none;
+	}
+
+	.carousel__arrowLeft {
+		left: -4px;
+    	top: 102px;
+	}
+
+	.carousel__arrowRight {
+		right: -4px;
+		top: 102px;
+	}
+
+	.carousel__imgWrap {
+		width: 49.666666666666666666%;
+		height: 100%;
+	}
+
+	.carousel__image {
+		background-repeat: no-repeat;
+		background-size: contain;
+		height: 303px;
+		left: 69px;
+		top: -9px;
+		width: 138px;
+	}
+
+	.carousel__blurredImage {
+		background-repeat: no-repeat;
+		background-size: contain;
+	    height: 185px;
+    	width: 90px;
+    	top: 48px;
+    	left: 15px;
+	}
+
+	.carousel__playButtonContainer {
+		height: 45px;
+		left: 113px;
+		top: 97px;
+		width: 45px;
+	}
+
+	.carousel__dotsForm {
+		margin-left: 0;
+		bottom: -38px;
+		left: -50px;
+	}
+
+	.playButton__triangle {
+		border-bottom: 8px solid transparent;
+		border-left: 15px solid #fff;
+		border-top: 8px solid transparent;
+		left: 12px;
+		top: 9px;
+	}
+
+	.articlesBlockWrapper {
+		height: 37.375rem;
+	}
+
+	.articlesBlock {
+		display: block;
+		padding-top: 4.875rem;
+	}
+
+	.article__picWrap {
+		display: block;
+		position: relative;
+		height: 100px;
+		width: 16.875%;
+	}
+
+	.article__sprite_wrench {
+		left: 31px;
+		top: 0px;
+	}
+
+	.articlesBlock__article {
+		box-sizing: border-box;
+		display: block;
+		width: 100%;
+	}
+
+	.article__header {
+		font-size: 1.5rem;
+	}
+
+	.article__body {
+		font-size: 1rem;
+		height: 4.5rem;
+		margin-top: 1px;
+		padding-left: .125rem;
+		padding-right: 1rem;
+	}
+
+	.article__cut {
+		font-size: 1.125rem;
+		margin-top: .875rem;
+		padding-right: 1.75rem;
 	}
 }
