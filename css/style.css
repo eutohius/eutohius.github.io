@@ -1131,7 +1131,7 @@ html {
 		padding-top: .4375rem;
 	}
 
-	.headline__menu:hover {
+	.headline__menu:hover, .headline__menu:active {
 		background-color: rgba(54, 41, 62, .8);
 		border: 1px solid rgba(0, 0, 0, .5);
 		border-radius: 10px;
@@ -1162,6 +1162,14 @@ html {
 		vertical-align: bottom;
 	}
 
+	.headline__menu:hover .menu__item:first-child, .headline__menu:active .menu__item:first-child {
+		border-top: 1px solid #5f486a;
+	} 
+
+	.headline__menu:hover .menu__item:first-child .menu__link, .headline__menu:active .menu__item:first-child .menu__link {
+		padding-top: .75rem;
+	}
+
 	.menu__item:last-child {
 		border-bottom: none;
 	}
@@ -1174,7 +1182,7 @@ html {
 		margin: auto;
 	}
 
-	.menu__link:hover {
+	.menu__link:hover, .menu__link:active {
 		background-color: rgba(43, 34, 49, .8);
 		width: 100%;
 	}
