@@ -1102,7 +1102,9 @@ and (min-width: 481px) {
 
 @media only screen 
 and (max-width: 480px) 
-and (min-width: 321px) {
+and (min-width: 321px),
+ (max-device-width: 480px)
+ and (min-device-width: 321px) {
 	.header, 
 	.carousel, 
 	.articlesBlock, 
@@ -1589,7 +1591,7 @@ and (min-width: 321px) {
 }
 
 @media only screen 
-and (max-width: 320px) {
+and (max-width: 320px), (max-device-width: 320px) {
 	.header, 
 	.carousel, 
 	.articlesBlock, 
@@ -1659,11 +1661,13 @@ and (max-width: 320px) {
 		vertical-align: bottom;
 	}
 
-	.headline__menu:hover .menu__item:first-child, .headline__menu:active .menu__item:first-child {
+	.headline__menu:hover .menu__item:first-child, 
+	.headline__menu:active .menu__item:first-child {
 		border-top: 1px solid #5f486a;
 	} 
 
-	.headline__menu:hover .menu__item:first-child .menu__link, .headline__menu:active .menu__item:first-child .menu__link {
+	.headline__menu:hover .menu__item:first-child .menu__link, 
+	.headline__menu:active .menu__item:first-child .menu__link {
 		padding-top: .75rem;
 	}
 
@@ -1998,6 +2002,4 @@ and (max-width: 320px) {
 		padding-top: 1.875rem;
 		text-align: center;
 	}
-
-
 }
