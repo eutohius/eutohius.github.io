@@ -3,12 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-    <title>Homework 3-4</title>
-
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Timer</title>
 </head>
 <body>
-<script src="js/page_obj.js"></script>
-<!--<script src="js/dumb.js"></script>-->
-<script src="js/smart.js"></script>
+<div class="container">
+<div class="row">
+    <div class="col-6 offset-3 headerWrapper"><h1 class="header">tiny timer</h1></div>
+</div>
+<div class="row">
+    <div class="col-6 offset-3 timerBody"><span class="hours">00</span>:<span class="minutes">00</span>:<span class="seconds">00</span> <span class="millis">000</span></div>
+</div>
+<div class="row">
+    <div class="offset-3 btn-group">
+        <button type="button" class="btn btn-secondary start">start</button>
+        <!--<button type="button" class="btn btn-secondary pause">pause</button>-->
+        <button type="button" class="btn btn-secondary split">split</button>
+        <button type="button" class="btn btn-secondary stop">stop</button>
+        <button type="button" class="btn btn-secondary reset">reset</button>
+    </div>
+</div>
+    <div class="row">
+        <div class="col-6 offset-3 results">
+            <table class="table stopTable">
+                <tr>
+                    <td></td>
+                    <td id="stoptime"></td>
+                    <td>
+                        <span class="badge badge-danger">stop</span>
+                    </td>
+                </tr>
+            </table>
+
+        </div>
+    </div>
+</div>
+<script src="js/timerobject.js"></script>
+<script src="js/timerscript.js"></script>
 </body>
 </html>

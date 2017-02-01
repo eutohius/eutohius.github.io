@@ -1,0 +1,29 @@
+body {
+    padding-top: 20px;
+}
+
+.headerWrapper {
+    padding-left: 0;
+}
+
+.header {
+    text-transform: lowercase;
+}
+
+.timerBody {
+    font-size: 60px;
+    padding-left: 0;
+}
+
+.millis {
+    font-size: 16px;
+}
+
+#stoptime {
+    color: #f00;
+}
+
+.stopTable {
+    margin-top: 10px;
+    visibility: hidden;
+}
