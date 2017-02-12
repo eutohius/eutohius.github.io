@@ -1,29 +1,100 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
 body {
-    padding-top: 20px;
+    color: #392113;
+    font-family: Arial, Verdana, sans-serif;
 }
 
-.headerWrapper {
-    padding-left: 0;
+.tabsContainer {
+    padding-left: 10px;
 }
 
-.header {
-    text-transform: lowercase;
+.tabs {
+    display: block;
+    height: 36px;
+    list-style: none;
 }
 
-.timerBody {
-    font-size: 60px;
-    padding-left: 0;
+.tab {
+    border: 2px solid #392113;
+    border-bottom: none;
+    border-right-width: 0px;
+    border-radius: 20% 20% 0 0;
+    box-sizing: border-box;
+    background-color: #918887;
+    display: inline-block;
+    float:left;
+    width: 100px;
+    height: 28px;
+    margin-top: 8px;
+    padding-left: 5px;
+    padding-top: 5px;
 }
 
-.millis {
-    font-size: 16px;
+.tab:last-child {
+    border-right-width: 2px;
 }
 
-#stoptime {
-    color: #f00;
+.tab:hover {
+    cursor: pointer;
 }
 
-.stopTable {
+.active {
+    background-color: #63aa73;
+    border-bottom: none;
+    transform: scaleY(1.1) translateY(-1px);
+}
+
+.text {
+    background-color: #63aa73;
+    border: 2px solid #392113;
+    border-radius: 0 10px 10px 10px;
+    padding: 5px;
+    width: 50%;
+}
+
+.formContainer {
+    margin-top: 20px;
+    padding-left: 10px;
+}
+
+form {
+    position: relative;
+}
+
+label {
+    display: block;
     margin-top: 10px;
-    visibility: hidden;
+}
+
+.forLabel {
+    display: inline-block;
+    width: 100px;
+}
+
+.showAllButton {
+    height: 20px;
+    padding: 0 10px 0 10px;
+    margin-top: 10px;
+}
+
+.tooltip {
+    background-color: #fff;
+    position: absolute;
+    left: 250px;
+    top: -10px;
+    border: 1px solid #000;
+    font-style: italic;
+    padding: 5px 10px;
+}
+
+.tooltip_lastname {
+    top: 20px;
+}
+
+.tooltip_address {
+    top:50px;
 }

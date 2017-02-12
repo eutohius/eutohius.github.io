@@ -2,43 +2,36 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <title>Timer</title>
+    <script src="js/jquery-3.1.1.js"></script>
+    <script src="js/tabs.js"></script>
+    <script src="js/tooltips.js"></script>
+    <title>Homework 7-8</title>
 </head>
 <body>
-<div class="container">
-<div class="row">
-    <div class="col-6 offset-3 headerWrapper"><h1 class="header">tiny timer</h1></div>
-</div>
-<div class="row">
-    <div class="col-6 offset-3 timerBody"><span class="hours">00</span>:<span class="minutes">00</span>:<span class="seconds">00</span> <span class="millis">000</span></div>
-</div>
-<div class="row">
-    <div class="offset-3 btn-group">
-        <button type="button" class="btn btn-secondary start">start</button>
-        <!--<button type="button" class="btn btn-secondary pause">pause</button>-->
-        <button type="button" class="btn btn-secondary split">split</button>
-        <button type="button" class="btn btn-secondary stop">stop</button>
-        <button type="button" class="btn btn-secondary reset">reset</button>
-    </div>
-</div>
-    <div class="row">
-        <div class="col-6 offset-3 results">
-            <table class="table stopTable">
-                <tr>
-                    <td></td>
-                    <td id="stoptime"></td>
-                    <td>
-                        <span class="badge badge-danger">stop</span>
-                    </td>
-                </tr>
-            </table>
+<div class="tabsContainer">
+    <ul class="tabs">
+        <li class="tab tab-1 active">First</li>
+        <li class="tab tab-2">Second</li>
+        <li class="tab tab-3">Third</li>
+    </ul>
 
-        </div>
-    </div>
+    <div class="text mainText-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis harum impedit neque nulla quo? Amet asperiores dolores eligendi expedita illum nobis odit, qui! Inventore magni mollitia sit. Exercitationem ipsum nulla possimus praesentium soluta tempora! Architecto autem cum cupiditate enim error explicabo id, illo impedit libero officiis placeat praesentium quaerat quia quidem repellat sapiente sequi velit vitae, voluptas voluptate! Animi asperiores aspernatur et iste iusto maxime omnis quae suscipit. Aliquam atque deleniti necessitatibus nulla quam tempore tenetur, voluptatum. A alias, animi dolorum ex id, in laudantium minus natus obcaecati omnis reiciendis veritatis voluptas voluptate? Dolore est fuga perspiciatis quasi quisquam quo?</div>
+    <div class="text mainText-2" hidden>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium amet dolores, ducimus earum eum excepturi impedit inventore ipsam itaque nam nihil nostrum possimus quasi quibusdam quis quisquam sed sequi soluta suscipit totam unde vel velit voluptatibus? Ab expedita explicabo incidunt labore magni minima officia quidem unde voluptates voluptatum? Aspernatur aut beatae debitis dolores, enim eum expedita explicabo, harum incidunt, labore natus non placeat possimus quod sapiente unde veritatis? Ab autem commodi id laborum molestias nesciunt, nihil officiis quae repellendus veniam.</div>
+    <div class="text mainText-3" hidden>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque eligendi itaque minus molestias nam non possimus saepe sequi suscipit? Assumenda distinctio doloremque modi nesciunt temporibus tenetur voluptatem? Alias, aut autem consequatur dignissimos, dolor eveniet ex explicabo impedit incidunt iste itaque molestias, mollitia necessitatibus nemo non odit praesentium quae quasi reprehenderit sed voluptas voluptatem voluptatibus? Accusantium ad atque blanditiis dicta dignissimos, dolorem eius error et eum fugiat harum illo illum ipsam iste iure laudantium magni maiores nostrum numquam officiis optio placeat qui ratione, rem unde veniam vero voluptas? Asperiores at corporis cum, dicta, dolor ducimus et ipsum iste non officiis quidem quod, reiciendis soluta temporibus voluptates? Atque eius esse labore voluptatem!</div>
 </div>
-<script src="js/timerobject.js"></script>
-<script src="js/timerscript.js"></script>
+
+<div class="formContainer">
+    <form action="/" method="post">
+        <label><span class="forLabel">First Name</span><input type="text"></label>
+        <div class="tooltip tooltip_firstname" hidden>Please provide your first name</div>
+        <label><span class="forLabel" >Last Name</span><input type="text"></label>
+        <div class="tooltip tooltip_lastname" hidden>Please provide your last name</div>
+        <label data-tip-text="Please provide your address"><span class="forLabel">Address</span><input type="text"> </label>
+        <div class="tooltip tooltip_address" hidden>Please provide your address</div>
+        <button class="showAllButton">Show tips/Hide tips</button>
+    </form>
+</div>
 </body>
 </html>
