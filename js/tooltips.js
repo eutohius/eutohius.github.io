@@ -3,16 +3,19 @@
  */
 (function ($, undefined) {
     $(function(){
-        var labels = document.body.querySelectorAll('label');
+        var labels = document.body.querySelectorAll('input');
         $(labels).on('mouseenter', function() {
-            $(this).next('.tooltip').fadeIn('slow');
+            $(this).closest('label').next('.tooltip').fadeIn('slow');
         });
         $(labels).on('mouseleave', function() {
-            $(this).next('.tooltip').fadeOut('slow');
+            $(this).closest('label').next('.tooltip').fadeOut('slow');
         });
         $('.showAllButton').on('click', function(e) {
-            $('.tooltip').fadeToggle('slow');
+            $('.tooltip').fadeIn('slow');
             e.preventDefault();
+            setTimeout(function () {
+                $('.tooltip').fadeOut('slow');
+            }, 2000)
         })
     });
 })(jQuery);
