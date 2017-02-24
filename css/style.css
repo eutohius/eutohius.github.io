@@ -1,68 +1,17 @@
-.maindiv {
-    margin: 0;
-    width: 100vw;
-    height: 1024px;
-    background-color: #F4F2EE;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    overflow: auto;
-}
-hr {
-    margin-top: 0;
-    margin-bottom: 0;
-}
-#profession{
-    padding-left: 0;
-    margin-top: 0;
-    font-family: Arial;
-    color:  #1f1f1f;
-    font-size: 14px;
-    font-weight: 400;
-}
-.contents{
-    width:500px;
-    height: 100%;
-}
-.header {
-    font-family: 'Myriad Pro', sans-serif;
-    color:  #1f1f1f;
-    font-size: 18px;
-    font-weight: 700;
-    text-align: left;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-.info {
-    font-family: Arial, sans-serif;
-    color:  #1f1f1f;
-    font-size: 14px;
-    font-weight: 400;
-    padding-top: 0;
-    padding-bottom: 0;
-    margin-top: 0;
-    margin-bottom: 20px;
-}
-.single {
-    padding: 0 0 0 40px;
-}
-.name {
-    margin-top: 50px;
-    margin-bottom: 0;
-    font-family: Arial, sans-serif;
-    color:  #010101;
+.myModalBox {
+    background-color: #6699ff;
+    border-radius: 20px;
+    box-shadow: 5px 5px 2px 0 rgba(0,0,0,.4);
+    color: #fff;
+    display: none;
     font-size: 36px;
-    font-weight: 700;
+    height:250px;
+    left: calc(50% - 250px);
+    line-height:250px;
+    opacity: .9;
+    position: absolute;
     text-align: center;
-}
-.profilephoto img {
-    height: 200px;
-    width: 200px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-.link {
-    padding: 0 0 40px 40px;
-    font-style: italic;
+    top: calc(50% - 125px);
+    width: 500px;
+    z-index: 1;
 }

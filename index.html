@@ -1,71 +1,91 @@
 <!doctype html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-3.1.1.js"></script>
+    <script src="js/test.js"></script>
+    <script src="js/tmpl.js"></script>
+    <script src="js/script.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" href="css/reset.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <!--<link rel="stylesheet" type="text/css" href="scss/style.css">-->
-    <script type="text/javascript" src="js/jquery-3.1.1.js"></script>
-    <script type="text/javascript" src="js/jquery.simplecarousel.js"></script>
-    <script type="text/javascript" src="js/scriptCarousel.js"></script>
-    <script type="text/javascript" src="js/tmpl.js"></script>
-    <script type="text/javascript" src="js/tmpl-script.js"></script>
-    <script type="text/javascript" src="js/htmlObject.js"></script>
-    <!--<script type="text/javascript" src="js/script.js"></script>-->
-    <title>Document</title>
+    <title>Homework 13-14</title>
 </head>
 <body>
-<div class="carousel-wrapper">
-    <div class="carousel-arrow carousel-arrow-left">
+<div class="myModalBox"></div>
+<div class="wrapper" id="testWrap"></div>
+<script type="html/javascript" id="testTemplate">
+    <div class="row justify-content-center">
+        <p class="col-auto offset-1 h1">{{= test.header}}</p>
     </div>
-    <div class="carousel-arrow carousel-arrow-right"></div>
-    <ul class="carousel-list">
-        <li class="carousel-element"><a href="#"><img src="img/img1.jpg" alt="nature image 1"></a></li>
-        <li class="carousel-element"><a href="#"><img src="img/img2.jpg" alt="nature image 2"></a></li>
-        <li class="carousel-element"><a href="#"><img src="img/img3.jpg" alt="nature image 3"></a></li>
-        <li class="carousel-element"><a href="#"><img src="img/img4.jpg" alt="nature image 4"></a></li>
-        <li class="carousel-element"><a href="#"><img src="img/img5.jpg" alt="nature image 5"></a></li>
-        <li class="carousel-element"><a href="#"><img src="img/img6.jpg" alt="nature image 6"></a></li>
-        <li class="carousel-element"><a href="#"><img src="img/img7.jpg" alt="nature image 7"></a></li>
-        <li class="carousel-element"><a href="#"><img src="img/img8.jpg" alt="nature image 8"></a></li>
-        <li class="carousel-element"><a href="#"><img src="img/img9.jpg" alt="nature image 9"></a></li>
-        <li class="carousel-element"><a href="#"><img src="img/img10.jpg" alt="nature image 10"></a></li>
-    </ul>
+    <form action="#" class="offset-1" method="post">
+        <fieldset class="form-group"><legend>1. {{= test.question1.question}}</legend>
+            <div class="form-check">
+                <label>
+                    <input type="checkbox" value="true" name="option1-1">
+                    {{= test.question1.option1}}
+                </label>
+            </div>
+            <div class="form-check">
+                <label>
+                    <input type="checkbox" value="true" name="option1-2">
+                    {{= test.question1.option2}}
+                </label>
+            </div>
+            <div class="form-check">
+                <label>
+                    <input type="checkbox" value="true" name="option1-3">
+                    {{= test.question1.option3}}
+                </label>
+            </div>
+            </fieldset>
+        <fieldset class="form-group"><legend>2. {{= test.question2.question}}</legend>
+            <div class="form-check">
+                <label>
+                    <input type="checkbox" value="true" name="option2-1">
+                    {{= test.question2.option1}}
+                </label>
+            </div>
+            <div class="form-check">
+                <label>
+                    <input type="checkbox" value="true" name="option2-2">
+                    {{= test.question2.option2}}
+                </label>
+            </div>
+            <div class="form-check">
+                <label>
+                    <input type="checkbox" value="true" name="option2-3">
+                    {{= test.question2.option3}}
+                </label>
+            </div>
+        </fieldset>
+        <fieldset class="form-group"><legend>3. {{= test.question3.question}}</legend>
+            <div class="form-check">
+                <label>
+                    <input type="checkbox" value="true" name="option3-1">
+                    {{= test.question3.option1}}
+                </label>
+            </div>
+            <div class="form-check">
+                <label>
+                    <input type="checkbox" value="true" name="option3-2">
+                    {{= test.question3.option2}}
+                </label>
+            </div>
+            <div class="form-check">
+                <label>
+                    <input type="checkbox" value="true" name="option3-3">
+                    {{= test.question3.option3}}
+                </label>
+            </div>
+        </fieldset>
+    </form>
+    </script>
+<div class="row justify-content-center">
+    <input type="submit" name="go" value="Проверить мои результаты" class="btn btn-info btn-lg" id="check">
 </div>
-<div class="tmpl-wrapper">
-    <script type="html/javascript" id="template">
-        <div class = "maindiv">
-			<div class = "contents">
 
-    <h1 class = "name"> {{= data.name}} </h1>
-    <div class = "profilephoto" align="center">
-    <img src="{{= data.imgSource}}" alt ="A cat">
-</div>
-    <p id = "profession">{{= data.profession}}</p>
-    <hr>
-    <h3 class = "header">{{= data.section1Header}}</h3>
-    <ul class = "info">
-    {{for (var i = 0; i < data.section1paragraphs.length; i++) { }}
-    <li>{{= data.section1paragraphs[i] }}</li>
-    {{ }; }}
-    </ul>
-
-    <hr>
-    <h3 class = "header">{{= data.section2Header}}</h3>
-    <p class = "data single">{{= data.phoneNumber}}</p>
-    <h3 class = "header">{{= data.section3Header}}</h3>
-    <a href="{{= data.socialLink.href}}" target="_blank" class = "link">
-    {{= data.socialLink.text}}
-    </a>
-    <hr style="margin-top: 20px">
-    <h3 class = "header">{{= data.section4Header}}</h3>
-    <p class = "data single">{{= data.feedback}}</p>
-</div>
-</div>
-</script>
-</div>
 </body>
 </html>
