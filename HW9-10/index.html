@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/jquery-3.1.1.js"></script>
+    <script type="text/javascript" src="js/jquery.color.js"></script>
+    <script src="js/jquery.jcarousel.js"></script>
+    <script src="js/jquery.prettydropdowns.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/navbar-jq.js"></script>
+    <title>Homework 9-10</title>
+</head>
+<body>
+<h1>neat little carousel</h1>
+<div class="jcarousel-wrapper">
+        <div class="jcarousel">
+            <ul class="jcarousel-list">
+                <li class="jcarousel-item"><img src="img/one-web.jpg" alt="mountain river"></li>
+                <li class="jcarousel-item"><img src="img/two-web.jpg" alt="house on a lake"></li>
+                <li class="jcarousel-item"><img src="img/three-web.jpg" alt="mountain lake"></li>
+                <li class="jcarousel-item"><img src="img/four-web.jpg" alt="fishing sun pic"></li>
+                <li class="jcarousel-item"><img src="img/five-web.jpg" alt="snowy mountains"></li>
+            </ul>
+        </div>
+    <a href="#" class="jcarousel-control-prev">&lsaquo;</a>
+    <a href="#" class="jcarousel-control-next">&rsaquo;</a>
+</div>
+<div class="formWrapper">
+    <form action="#" method="get">
+        <label>
+            choose your country
+            <select name="country" id="select" class="select">
+                <option value="ukr">Ukraine</option>
+                <option value="rus">Russia</option>
+                <option value="pol">Poland</option>
+                <option value="hun">Hungary</option>
+                <option value="tur">Turkey</option>
+                <option value="gre">Greece</option>
+                <option value="itl">Italy</option>
+                <option value="uk">United Kingdom</option>
+                <option value="cze">Czech Republic</option>
+                <option value="slk">Slovakia</option>
+                <option value="sln">Slovenia</option>
+                <option value="uzb">Uzbekistan</option>
+                <option value="chi">China</option>
+                <option value="jap">Japan</option>
+                <option value="sin">Singapore</option>
+            </select>
+        </label>
+        <input type="checkbox" id="opt1"><label class="checkLabel" for="opt1">option 1</label>
+        <input type="checkbox" id="opt2"><label class="checkLabel" for="opt2">option 2</label>
+        <input type="checkbox" id="opt3"><label class="checkLabel" for="opt3">option 3</label>
+    </form>
+</div>
+<div class="jqCheckWrapper">
+    <form action="#" method="get">
+        <span class="jslabe">jq option1</span><span class="jqCheckbox"><input type="checkbox" id="jsopt1"></span>
+        <span class="jslabe">jq option2</span><span class="jqCheckbox"><input type="checkbox" id="jsopt2" checked></span>
+        <span class="jslabe">jq option3</span><span class="jqCheckbox"><input type="checkbox" id="jsopt3"></span>
+    </form>
+</div>
+
+<nav>
+    <ul class="mainMenu">
+        <li><a href="#">nav1</a></li>
+        <li class="dropdown"><a href="#">nav2<span class="arrow">&#9658;</span></a>
+            <ul class="submenu firstLev">
+                <li><a href="#">submenu1</a></li>
+                <li class="dropdown"><a href="#">submenu2<span class="arrow"> &#9658;</span></a>
+                    <ul class="submenu secondLev">
+                        <li><a href="">submenu2.1</a></li>
+                        <li><a href="">submenu2.2</a></li>
+                        <li><a href="">submenu2.3</a></li>
+                        <li><a href="">submenu2.4</a></li>
+                        <li><a href="">submenu2.5</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">submenu3</a></li>
+                <li><a href="#">submenu4</a></li>
+                <li><a href="#">submenu5</a></li>
+            </ul>
+        </li>
+        <li><a href="#">nav3</a></li>
+        <li><a href="#">nav4</a></li>
+        <li><a href="#">nav5</a></li>
+    </ul>
+</nav>
+
+</body>
+</html>
