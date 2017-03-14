@@ -1,0 +1,37 @@
+body {
+}
+
+.caption {
+    margin-top: 20px;
+    width: 100%;
+    height: 50px;
+}
+
+.pixabayLogo {
+    margin-left: calc(100vw/2 - 100px);
+    margin-top: 30px;
+}
+
+#search {
+    margin-left: calc(100vw/2 - 105px);
+    margin-top: 10px;
+}
+
+.results {
+    max-width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.pixabayLogo {
+    width: 200px;
+}
+
+.gSearchContainer {
+    width: 400px;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    opacity: .85;
+}
