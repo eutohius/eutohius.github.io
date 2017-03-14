@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Part 2</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script type="text/javascript" src="js/script.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+	
+	<body>
+		<div class="wrapper container">
+			<form action="#" class="mainForm">
+				<fieldset>
+					<legend>Question</legend>
+					<input type="text" name="question">
+				</fieldset>
+				<fieldset>
+					<legend>Options</legend>
+					<div class="optionWrapper">
+					<input type="text" name="option1" class="options"> 
+					<label>
+					<input type="checkbox" name="correct1">	
+					Correct option
+					</label>
+					</div>
+
+					<div class="optionWrapper">
+					<input type="text" name="option2" class="options">
+					<label>
+					<input type="checkbox" name="correct2">
+					Correct option	
+					</label>
+					</div>
+					<button class="addField btn btn-info">One more option field...</button>
+				</fieldset>
+				<input type="submit" value="Send question" name="go" class="btn btn-danger">
+			</form>
+				<button class="getRandomTest btn btn-success">
+				Print random test to console
+				</button>
+		</div>
+	</body>		
+</html>

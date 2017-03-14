@@ -1,0 +1,23 @@
+.optionWrapper {
+	margin-top: 5px;
+}
+
+.addField {
+	margin-top: 15px;
+}
+
+.getRandomTest {
+	margin-top: 30px;
+}
+
+input[type="submit"] {
+	margin-top: 30px;
+}
+
+input[type="text"] {
+	width: 400px;
+}
+
+label {
+	margin-left: 10px;
+}
