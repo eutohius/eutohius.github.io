@@ -2,7 +2,7 @@
   "name": "homework17-18",
   "version": "0.1.0",
   "description": "Go It Homework 17-18",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

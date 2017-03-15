@@ -21,9 +21,13 @@ module.exports = function(grunt) {
 			options: {
 				separator: ';'
 			},
-			dist: {
-				src: ['src/js/*.js', '!src/js/main.js'],
+			js: {
+				src: ['src/js/*.js', '!src/js/main.js', '!src/js/plugins.js'],
 				dest: 'src/js/main.js'
+			},
+			plugins: {
+				src: ['src/js/plugins/*.js'],
+				dest: 'src/js/plugins.js'
 			}
 		},
 		uglify: {
@@ -32,7 +36,8 @@ module.exports = function(grunt) {
 			},
 			dist: {
 				files: {
-					'dist/main.min.js': ['src/js/main.js']
+					'dist/main.min.js': ['src/js/main.js'],
+					'dist/plugins.min.js': ['src/js/plugins.js']
 				}
 			}
 		}
