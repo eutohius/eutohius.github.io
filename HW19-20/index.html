@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="libs/jquery/dist/jquery.min.js"></script>
+    <script src="js/accordion.js"></script>
+    <script src="js/carousel.js"></script>
+    <script src="js/photomask.js"></script>
+    <meta charset="UTF-8">
+    <title>Homework19-20</title>
+</head>
+<body>
+    <div class="top">
+        <div class="section header">
+            <div class="logo header_logo">
+                <div class="logo_bg">
+                    <div class="logo_part logo_part__tl"></div>
+                    <div class="logo_part logo_part__tr"></div>
+                    <div class="logo_part logo_part__bl"></div>
+                    <div class="logo_part logo_part__br"></div>
+                    <div class="logo_pic">
+                    <img src="img/spritesheet.png" alt="gear-logo" class="logo_gear">
+                    </div>
+                </div>
+                <div class="logo_text">
+                    <span class="logo_build">Build Home</span><br>
+                    <span class="logo_industrial">Industrial Theme</span>
+                </div>
+            </div>
+            <ul class="socialNets">
+                <li class="socialNets_item socialNets_item__fb"><a href="#facebook" target="_blank" class="socialNets_link">
+                    <img class="socialNets_pic socialNets_pic__fb" src="img/socials-sprite.png" alt="social networks icons">
+                </a></li>
+                <li class="socialNets_item socialNets_item__twitter"><a href="#twitter" target="_blank" class="socialNets_link">
+                    <img class="socialNets_pic socialNets_pic__twitter" src="img/socials-sprite.png" alt="social networks icons">
+                </a></li>
+                <li class="socialNets_item socialNets_item__rss"><a href="#rss" target="_blank" class="socialNets_link">
+                    <img class="socialNets_pic socialNets_pic__rss" src="img/socials-sprite.png" alt="social networks icons">
+                </a></li>
+                <li class="socialNets_item socialNets_item__linkedin"><a href="#linked" target="_blank" class="socialNets_link">
+                    <img class="socialNets_pic socialNets_pic__linked" src="img/socials-sprite.png" alt="social networks icons">
+                </a></li>
+                <li class="socialNets_item socialNets_item__skype"><a href="#skype" target="_blank" class="socialNets_link">
+                    <img class="socialNets_pic socialNets_pic__skype" src="img/socials-sprite.png" alt="social networks icons">
+                </a></li>
+            </ul>
+        </div>
+        <div class="section menuWrap">
+            <ul class="menu">
+                <li class="menu_item"><a class="menu_link" href="#home">Home</a></li>
+                <li class="menu_item"><a class="menu_link" href="#features">Features</a></li>
+                <li class="menu_item"><a class="menu_link" href="#services">Services</a></li>
+                <li class="menu_item"><a class="menu_link" href="#news">News</a></li>
+                <li class="menu_item"><a class="menu_link" href="#shop">Shop</a></li>
+            </ul>
+            <form action="#" class="searchForm menuWrap_searchForm">
+                <input type="text" class="searchForm_box" placeholder="Search...">
+                <img class="searchForm_searchPic" src="img/spritesheet.png" alt="search_pic">
+            </form>
+        </div>
+
+        <div class="section carouselWrap">
+            <div class="carousel">
+                <div class="carousel_bg"></div>
+                <div class="carousel_caption">
+                    <span class="carousel_text__yellow">Build</span> your business
+                </div>
+                <div class="carousel_mask mask">
+                    <div class="mask_tab"></div>
+                    <div class="mask_tab__gray"></div>
+                    <div class="mask_tab"></div>
+                    <div class="mask_tab"></div>
+                    <div class="mask_tab"></div>
+                    <div class="mask_tab"></div>
+                    <div class="mask_tab__gray"></div>
+                    <div class="mask_tab"></div>
+                    <div class="mask_tab"></div>
+                    <div class="mask_tab"></div>
+                    <div class="mask_tab__gray"></div>
+                    <div class="mask_tab"></div>
+                    <div class="mask_tab__gray"></div>
+                    <div class="mask_tab"></div>
+                    <div class="mask_tab"></div>
+                    <div class="mask_tab"></div>
+                    <div class="mask_tab__gray"></div>
+                    <div class="mask_tab"></div>
+                    <div class="mask_tab__gray"></div>
+                    <div class="mask_tab"></div>
+                    <div class="mask_tab"></div>
+                    <div class="mask_tab"></div>
+                    <div class="mask_tab"></div>
+                    <div class="mask_tab"></div>
+                    <div class="mask_tab"></div>
+                    <div class="mask_tab"></div>
+                    <div class="mask_tab"></div>
+                    <div class="mask_tab"></div>
+                </div>
+
+                <form class="carousel_pagination">
+                    <input type="radio" name="pic" value="pic-1" id="opt-1" checked="true">
+                    <label for="opt-1" data-imgurl="img/main-1.jpg"></label>
+                    <input type="radio" name="pic" value="pic-2" id="opt-2">
+                    <label for="opt-2" data-imgurl="img/main-2.jpg"></label>
+                    <input type="radio" name="pic" value="pic-3" id="opt-3">
+                    <label for="opt-3" data-imgurl="img/main-3.jpg"></label>
+                </form>
+            </div>
+        </div>
+
+        <div class="section articlesWrap">
+            <article class="article">
+                <div class="article_aside article_number">01</div>
+                <div class="article_main">
+                    <div class="article_pic">
+                        <img class="article_sprite article_sprite__settings" src="img/spritesheet.png" alt="article_pic">
+                    </div>
+                    <div class="article_headline">Power inside</div>
+                    <div class="article_body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda dolorem dolores ducimus expedita fugiat laboriosam nisi, placeat repellat totam veritatis?</div>
+                    <div class="article_cut"><a href="#art1" class="article_link">Read More <span class="arrow">&rarr;</span></a></div>
+                </div>
+            </article>
+
+            <article class="article">
+                <div class="article_aside article_number">02</div>
+                <div class="article_main">
+                    <div class="article_pic">
+                        <img class="article_sprite article_sprite__params" src="img/spritesheet.png" alt="article_pic">
+                    </div>
+                    <div class="article_headline">New Technologies</div>
+                    <div class="article_body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda dolorem dolores ducimus expedita fugiat laboriosam nisi, placeat repellat totam veritatis?</div>
+                    <div class="article_cut"><a href="#art1" class="article_link">Read More <span class="arrow">&rarr;</span></a></div>
+                </div>
+            </article>
+
+            <article class="article">
+                <div class="article_aside article_number">03</div>
+                <div class="article_main">
+                    <div class="article_pic">
+                        <img class="article_sprite article_sprite__truck" src="img/spritesheet.png" alt="article_pic">
+                    </div>
+                    <div class="article_headline">Fast Support</div>
+                    <div class="article_body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda dolorem dolores ducimus expedita fugiat laboriosam nisi, placeat repellat totam veritatis?</div>
+                    <div class="article_cut"><a href="#art1" class="article_link">Read More <span class="arrow">&rarr;</span></a></div>
+                </div>
+            </article>
+        </div>
+    </div>
+
+<div class="middle-top">
+    <div class="section services">
+        <h2 class="services_headline">Our services</h2>
+        <div class="services_picsblock">
+            <figure class="services_figure">
+                <a class="services_mask" href="#sevice-1" hidden>+</a>
+                <a class="services_link" href="#sevice-1"></a>
+                <img class="services_img" src="img/services-schedule.jpg" alt="schedule services">
+                <figcaption class="services_figcaption">Schedule Services</figcaption>
+            </figure>
+            <figure class="services_figure">
+                <a class="services_mask" href="#sevice-1" hidden>+</a>
+                <a class="services_link" href="#sevice-2"></a>
+                <img class="services_img" src="img/services-preventive.jpg" alt="preventive maintenance">
+                <figcaption class="services_figcaption">Preventive Maintenance</figcaption>
+            </figure>
+            <figure class="services_figure">
+                <a class="services_mask" href="#sevice-1" hidden>+</a>
+                <a class="services_link" href="#sevice-3"></a>
+                <img class="services_img" src="img/services-tire.jpg" alt="tire&wheel services">
+                <figcaption class="services_figcaption">Tire & Wheel Services</figcaption>
+            </figure>
+            <figure class="services_figure">
+                <a class="services_mask" href="#sevice-1" hidden>+</a>
+                <a class="services_link" href="#sevice-4"></a>
+                <img class="services_img" src="img/services-repair.jpg" alt="repair servicces">
+                <figcaption class="services_figcaption">Repair Services</figcaption>
+            </figure>
+        </div>
+    </div>
+</div>
+<div class="middle-middle">
+    <div class="section newsBlock">
+        <div class="newsBlock_articles">
+            <h3 class="newsBlock_headline">Latest news</h3>
+            <article class="newsArticle">
+                <div class="newsArticle_pic newsArticle_pic__top">
+                    <div class="newsArticle_date date">
+                        <div class="date_month">Jan</div>
+                        <div class="date_day">23</div>
+                    </div>
+                </div>
+                <div class="newsArticle_article">
+                    <div class="newsArticle_headline"><a class="newsArticle_link" href="#art-1">Advanced machinery helps improve quality</a></div>
+                    <div class="newsArticle_meta">
+                        by <span class="newsArticle_author">cmsmasters</span>
+                        <span class="newsArticle_comments">Comments (<span class="newsArticle_numberComments">6</span>)</span>
+                    </div>
+                    <div class="newsArticle_text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur cum cumque, id illo iste placeat quam quidem sit ullam vero! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis, obcaecati.
+                    </div>
+                </div>
+            </article>
+
+            <article class="newsArticle">
+                <div class="newsArticle_pic newsArticle_pic__bottom">
+                    <div class="newsArticle_date">
+                        <div class="date_month">Jan</div>
+                        <div class="date_day">21</div>
+                    </div>
+                </div>
+                <div class="newsArticle_article">
+                    <div class="newsArticle_headline"><a class="newsArticle_link" href="#art-2">Powerful Techniques for Advanced Service</a></div>
+                    <div class="newsArticle_meta">
+                        by <span class="newsArticle_author">cmsmasters</span>
+                        <span class="newsArticle_comments">Comments (<span class="newsArticle_numberComments">6</span>)</span>
+                    </div>
+                    <div class="newsArticle_text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, tenetur?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur cum cumque, id illo iste placeat quam quidem sit ullam vero!
+                    </div>
+                </div>
+            </article>
+        </div>
+
+        <div class="newsBlock_banners">
+            <h3 class="newsBlock_headline">Banners place</h3>
+            <div class="accordion">
+                <div class="accordion_section accordion_section__closed">
+                    <div class="accordion_panel">
+                        <div class="accordion_plus">+</div>
+                        <div class="accordion_heading">accordion panel 1</div>
+                    </div>
+                    <div class="accordion_article">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ad aperiam asperiores commodi consectetur consequuntur, deleniti deserunt ducimus ea est excepturi facere ipsum, iste itaque iure laudantium maxime mollitia nemo nesciunt, numquam odio optio porro quia quidem quisquam quod reprehenderit tenetur ullam velit veniam veritatis vitae voluptas voluptates! Delectus, pariatur?</div>
+                </div>
+                <div class="accordion_section accordion_section__closed">
+                    <div class="accordion_panel">
+                        <div class="accordion_plus">+</div>
+                        <div class="accordion_heading">accordion panel 2</div>
+                    </div>
+                    <div class="accordion_article">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis earum esse expedita fugit, incidunt laborum nulla qui sit ullam voluptatem. Architecto pariatur quas, reprehenderit saepe sequi sit velit veniam. Ad alias, culpa debitis delectus dicta dolor doloribus expedita illo inventore iste minima modi, numquam officia qui ratione sed tempora ullam.</div>
+                </div>
+                <div class="accordion_section accordion_section__closed">
+                    <div class="accordion_panel">
+                        <div class="accordion_plus">+</div>
+                        <div class="accordion_heading">accordion panel 3</div>
+                    </div>
+                    <div class="accordion_article">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias consectetur cum dolore dolorem, ea eius eligendi eveniet ex explicabo facilis fugiat laborum libero magnam modi molestiae nam neque nesciunt nostrum numquam obcaecati odio officiis porro possimus quasi quis quod reiciendis sapiente sint sunt totam unde veritatis vitae! Omnis, repellendus!</div>
+                </div>
+                <div class="accordion_section accordion_section__closed">
+                    <div class="accordion_panel">
+                        <div class="accordion_plus">+</div>
+                        <div class="accordion_heading">accordion panel 4</div>
+                    </div>
+                    <div class="accordion_article">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aspernatur corporis culpa cupiditate, delectus dicta dolor dolorem doloremque ducimus facilis id illum, impedit ipsam ipsum labore laboriosam laborum libero magni maxime nam neque nesciunt nulla odio officia optio pariatur quam qui recusandae saepe sed soluta tempora vero voluptas. Facilis, temporibus.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="section middle-bottom">
+    <ul class="section partners">
+        <li class="partners_item"><a href="#1" class="partners_link"><img class="partners_pic partners_pic__1" src="img/spritesheet.png" alt="RBP wheels"></a></li>
+        <li class="partners_item"><a href="#2" class="partners_link"><img class="partners_pic partners_pic__2" src="img/spritesheet.png" alt="Moto metal"></a></li>
+        <li class="partners_item"><a href="#3" class="partners_link"><img class="partners_pic partners_pic__3" src="img/spritesheet.png" alt="2crave"></a></li>
+        <li class="partners_item"><a href="#4" class="partners_link"><img class="partners_pic partners_pic__4" src="img/spritesheet.png" alt="atx series"></a></li>
+        <li class="partners_item"><a href="#5" class="partners_link"><img class="partners_pic partners_pic__5" src="img/spritesheet.png" alt="Cruiser alloy"></a></li>
+        <li class="partners_item"><a href="#6" class="partners_link"><img class="partners_pic partners_pic__6" src="img/spritesheet.png" alt="Gear"></a></li>
+    </ul>
+</div>
+<div class="bottom">
+    <ul class="section bottomMenu">
+        <li class="bottomMenu_item"><span class="bottomMenu_header">Socials</span>
+            <ul class="bottomMenu_submenu">
+                <li class="bottomMenu_submenuItem"><a class="bottomMenu_link" href="#fb" target="_blank">Facebook</a></li>
+                <li class="bottomMenu_submenuItem"><a class="bottomMenu_link" href="#flickr" target="_blank">Flickr</a></li>
+                <li class="bottomMenu_submenuItem"><a class="bottomMenu_link" href="#twitter" target="_blank">Twitter</a></li>
+                <li class="bottomMenu_submenuItem"><a class="bottomMenu_link" href="#vimeo" target="_blank">Vimeo</a></li>
+            </ul>
+        </li>
+        <li class="bottomMenu_item"><span class="bottomMenu_header">Links</span>
+            <ul class="bottomMenu_submenu">
+                <li class="bottomMenu_submenuItem"><a class="bottomMenu_link" href="#link1" target="_blank">How to Write a Blog</a></li>
+                <li class="bottomMenu_submenuItem"><a class="bottomMenu_link" href="#link2" target="_blank">Create a Blog in 4 Steps</a></li>
+                <li class="bottomMenu_submenuItem"><a class="bottomMenu_link" href="#link3" target="_blank">15 Tips to Increase Traffic</a></li>
+                <li class="bottomMenu_submenuItem"><a class="bottomMenu_link" href="#link4" target="_blank">20 Blog Post Ideas</a></li>
+            </ul>
+        </li>
+        <li class="bottomMenu_item"><span class="bottomMenu_header">Blogroll</span>
+            <ul class="bottomMenu_submenu">
+                <li class="bottomMenu_submenuItem"><a class="bottomMenu_link" href="#link5" target="_blank">Blogs Blog</a></li>
+                <li class="bottomMenu_submenuItem"><a class="bottomMenu_link" href="#link6" target="_blank">Roll up Roll up</a></li>
+                <li class="bottomMenu_submenuItem"><a class="bottomMenu_link" href="#link7" target="_blank">Blog Free</a></li>
+                <li class="bottomMenu_submenuItem"><a class="bottomMenu_link" href="#link8" target="_blank">Wordpress Blog</a></li>
+            </ul>
+        </li>
+        <li class="bottomMenu_item"><span class="bottomMenu_header">About us</span>
+            <ul class="bottomMenu_submenu">
+                <li class="bottomMenu_submenuItem"><a class="bottomMenu_link" href="#link9" target="_blank">Agriculture</a></li>
+                <li class="bottomMenu_submenuItem"><a class="bottomMenu_link" href="#link10" target="_blank">Harvest</a></li>
+                <li class="bottomMenu_submenuItem"><a class="bottomMenu_link" href="#link11" target="_blank">Company News</a></li>
+                <li class="bottomMenu_submenuItem"><a class="bottomMenu_link" href="#link12" target="_blank">Investor Relations</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>
+<footer class="footer">
+    <div class="section footer_wrapper">
+
+            <div class="footer_contacts contacts">
+                <div class="contacts_div location">
+                    <a href="#location" class="contacts_link">
+                        <img src="img/spritesheet.png" alt="" class="location_pic">
+                        BuildHomeLtd.  Street Name 123   23 45 Cityname
+                    </a>
+                </div>
+
+                <div class="contacts_div tel">
+                    <a href="tel:+123900123456" class="contacts_link">
+                        <img src="img/spritesheet.png" alt="" class="tel_pic">
+                        +123 900 123 456
+                    </a>
+                </div>
+                <div class="contacts_div mail">
+                    <a href="mailto:info@buildhome.web" target="_blank" class="contacts_link">
+                        <img src="img/spritesheet.png" alt="" class="mail_pic">
+                        info@buildhome.web
+                    </a>
+                </div>
+            </div>
+        <div class="copyright">&copy; 2014 build home</div>
+    </div>
+</footer>
+</body>
+</html>

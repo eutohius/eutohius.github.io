@@ -1,0 +1,985 @@
+@font-face {
+  font-family: 'ubuntu_cr';
+  src: url("../fonts/ubuntu_rc/ubuntu-c-webfont.eot");
+  src: url("../fonts/ubuntu_rc/ubuntu-c-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/ubuntu_rc/ubuntu-c-webfont.woff2") format("woff2"), url("../fonts/ubuntu_rc/ubuntu-c-webfont.woff") format("woff"), url("../fonts/ubuntu_rc/ubuntu-c-webfont.svg#ubuntu_condensedregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ubunturegular';
+  src: url("../fonts/ubuntu_regular/ubuntu-regular-webfont.eot");
+  src: url("../fonts/ubuntu_regular/ubuntu-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/ubuntu_regular/ubuntu-regular-webfont.woff2") format("woff2"), url("../fonts/ubuntu_regular/ubuntu-regular-webfont.woff") format("woff"), url("../fonts/ubuntu_regular/ubuntu-regular-webfont.svg#ubunturegular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* line 32, app/sass/main.scss */
+body {
+  font-family: "ubunturegular", "ubuntu_cr", "Arial", sans-serif;
+}
+
+/* line 36, app/sass/main.scss */
+.top {
+  background-color: #fff;
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+/* line 42, app/sass/main.scss */
+.section {
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+/* line 47, app/sass/main.scss */
+.header {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Logo start */
+/* line 55, app/sass/main.scss */
+.logo_bg {
+  height: 36px;
+  width: 36px;
+  overflow: hidden;
+  position: relative;
+  top: -18px;
+  display: inline-grid;
+  grid-template-rows: 18px 18px;
+  grid-template-columns: 18px 18px;
+}
+
+/* line 66, app/sass/main.scss */
+.logo_pic {
+  position: absolute;
+  left: 20px;
+  top: 2px;
+}
+
+/* line 72, app/sass/main.scss */
+.logo_gear {
+  object-fit: none;
+  width: 32px;
+  height: 32px;
+  object-position: -199px -5px;
+}
+
+/* line 79, app/sass/main.scss */
+.logo_part__tl {
+  background: linear-gradient(-45deg, #fbfe2d 0%, #f7a40c 100%);
+}
+
+/* line 83, app/sass/main.scss */
+.logo_part__tr {
+  background: linear-gradient(0deg, #f4c100 0%, #e99400 100%);
+}
+
+/* line 87, app/sass/main.scss */
+.logo_part__bl {
+  background: linear-gradient(-45deg, #ffdf7d 0%, #ffc343 100%);
+}
+
+/* line 91, app/sass/main.scss */
+.logo_part__br {
+  background: linear-gradient(-45deg, #ffd75f 0%, #ffb729 100%);
+}
+
+/* line 95, app/sass/main.scss */
+.logo_text {
+  display: inline-block;
+  line-height: 18px;
+  padding-left: 10px;
+}
+
+/* line 101, app/sass/main.scss */
+.logo_build {
+  color: #434343;
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 2.5px;
+  text-align: left;
+  margin-left: -2px;
+}
+
+/* line 111, app/sass/main.scss */
+.logo_industrial {
+  color: #333333;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 4px;
+  line-height: 18px;
+  text-transform: lowercase;
+  font-variant: small-caps;
+}
+
+/*Social networks menu*/
+/* line 124, app/sass/main.scss */
+.socialNets {
+  height: 18px;
+  display: inline-block;
+}
+
+/* line 130, app/sass/main.scss */
+.socialNets_link:hover, .socialNets_link:visited, .socialNets_link:active, .socialNets_link:focus {
+  text-decoration: none;
+}
+
+/* line 135, app/sass/main.scss */
+.socialNets_item {
+  display: inline;
+  margin-right: 15px;
+}
+
+/* line 140, app/sass/main.scss */
+.socialNets_pic {
+  object-fit: none;
+  object-position: 0 0;
+  width: 20px;
+  height: 20px;
+}
+
+/* line 147, app/sass/main.scss */
+.socialNets_pic__fb {
+  width: 8px;
+  height: 16px;
+  object-position: -5px -5px;
+}
+
+/* line 153, app/sass/main.scss */
+.socialNets_pic__fb:hover {
+  object-position: -23px -5px;
+}
+
+/* line 157, app/sass/main.scss */
+.socialNets_pic__twitter {
+  width: 17px;
+  height: 13px;
+  object-position: -5px -31px;
+}
+
+/* line 163, app/sass/main.scss */
+.socialNets_pic__twitter:hover {
+  object-position: -67px -31px;
+}
+
+/* line 167, app/sass/main.scss */
+.socialNets_pic__rss {
+  width: 15px;
+  height: 15px;
+  object-position: -5px -56px;
+}
+
+/* line 173, app/sass/main.scss */
+.socialNets_pic__rss:hover {
+  object-position: -31px -56px;
+}
+
+/* line 177, app/sass/main.scss */
+.socialNets_pic__linked {
+  width: 16px;
+  height: 15px;
+  object-position: -41px -5px;
+}
+
+/* line 183, app/sass/main.scss */
+.socialNets_pic__linked:hover {
+  object-position: -41px -31px;
+}
+
+/* line 187, app/sass/main.scss */
+.socialNets_pic__skype {
+  width: 16px;
+  height: 16px;
+  object-position: -56px -56px;
+}
+
+/* line 193, app/sass/main.scss */
+.socialNets_pic__skype:hover {
+  object-position: -67px -5px;
+}
+
+/*Main menu start*/
+/* line 199, app/sass/main.scss */
+.menuWrap {
+  background-color: #2a2d32;
+  height: 56px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* line 206, app/sass/main.scss */
+.menu {
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+/* line 211, app/sass/main.scss */
+.menu_item {
+  display: inline-block;
+  line-height: 56px;
+  min-width: 125px;
+  text-align: center;
+  border-right: 1px solid #181a1d;
+  cursor: pointer;
+}
+
+/* line 220, app/sass/main.scss */
+.menu_item:first-child {
+  background-color: #248cec;
+}
+
+/* line 224, app/sass/main.scss */
+.menu_link {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 234, app/sass/main.scss */
+.menu_link:visited, .menu_link:focus {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* line 239, app/sass/main.scss */
+.menu_link:hover {
+  text-decoration: none;
+  color: #f4b60d;
+}
+
+/* line 244, app/sass/main.scss */
+.searchForm {
+  height: 100%;
+  position: relative;
+}
+
+/* line 249, app/sass/main.scss */
+.searchForm_box {
+  margin-right: 5px;
+  margin-top: 8px;
+  border: 1px solid #181a1d;
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 0.05);
+  color: #fff;
+  font-family: "Arial", "ubunturegular", "ubuntu_cr", sans-serif;
+  width: 241px;
+  height: 40px;
+  padding: 12px;
+  position: relative;
+}
+
+/* line 263, app/sass/main.scss */
+.searchForm_searchPic {
+  position: absolute;
+  right: 15px;
+  top: 22px;
+  object-fit: none;
+  width: 14px;
+  height: 14px;
+  object-position: -394px -5px;
+}
+
+/* Carousel implementation start */
+/* line 274, app/sass/main.scss */
+.carouselWrap {
+  margin-top: 40px;
+  max-width: 1160px;
+}
+
+/* line 279, app/sass/main.scss */
+.carousel {
+  width: 100%;
+  height: 460px;
+  position: relative;
+  z-index: 1;
+}
+
+/* line 286, app/sass/main.scss */
+.carousel_bg {
+  content: "";
+  background: url("../img/main-1.jpg") center center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+/* line 297, app/sass/main.scss */
+.carousel_caption {
+  width: 310px;
+  height: 215px;
+  position: absolute;
+  left: 35px;
+  bottom: 40px;
+  font-family: "ubunturegular", "ubuntu_cr", "Arial", sans-serif;
+  color: #ffffff;
+  font-size: 54px;
+  line-height: 52px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 20px 20px 40px 20px;
+  box-sizing: border-box;
+  background: url("../img/carousel-caption.svg") no-repeat;
+  z-index: 3;
+}
+
+/* line 315, app/sass/main.scss */
+.carousel_mask {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+}
+
+/* line 322, app/sass/main.scss */
+.mask {
+  display: grid;
+  grid-template-columns: 116px 116px 116px 116px 116px 116px 116px;
+  grid-template-rows: 114px 114px 114px 115px;
+  grid-column-gap: 1px;
+  grid-row-gap: 1px;
+}
+
+/* line 330, app/sass/main.scss */
+.mask_tab {
+  background-color: #000;
+  opacity: .1;
+}
+
+/* line 335, app/sass/main.scss */
+.mask_tab__gray {
+  background-color: #f8f8f8;
+  opacity: .1;
+}
+
+/* line 340, app/sass/main.scss */
+.carousel_pagination {
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 45px);
+  z-index: 5;
+  cursor: pointer;
+}
+
+/* line 346, app/sass/main.scss */
+.carousel_pagination input[type="radio"] {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* line 351, app/sass/main.scss */
+.carousel_pagination label {
+  background-color: #fff;
+  box-sizing: border-box;
+  border: 3px solid #fff;
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+  margin-right: 15px;
+}
+
+/* line 360, app/sass/main.scss */
+.carousel_pagination input[type="radio"]:checked + label {
+  background-color: #001d1d;
+}
+
+/* line 365, app/sass/main.scss */
+.carousel_text__yellow {
+  color: #f4b60d;
+}
+
+/* Articles start */
+/* line 371, app/sass/main.scss */
+.articlesWrap {
+  margin-top: 40px;
+  margin-bottom: 60px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+/* line 379, app/sass/main.scss */
+.article {
+  display: grid;
+  grid-template-rows: 36px 36px 55px 24px;
+  grid-template-columns: 120px 240px;
+  grid-template-areas: "number pic" "number headline" "number body" "number cut";
+}
+
+/* line 390, app/sass/main.scss */
+.article_aside {
+  grid-area: number;
+  color: #e9e9ea;
+  font-size: 90px;
+  letter-spacing: -3px;
+  line-height: 60px;
+}
+
+/* line 398, app/sass/main.scss */
+.article_pic {
+  grid-area: pic;
+}
+
+/* line 402, app/sass/main.scss */
+.article_headline {
+  grid-area: headline;
+  text-transform: capitalize;
+  font-family: "ubunturegular", "ubuntu_cr", "Arial", sans-serif;
+  color: #292b2e;
+  font-size: 20px;
+  line-height: 20px;
+  margin-top: 10px;
+}
+
+/* line 412, app/sass/main.scss */
+.article_body {
+  grid-area: body;
+  margin-top: 20px;
+  height: 60px;
+  overflow: hidden;
+  font-family: "Arial", "ubunturegular", "ubuntu_cr", sans-serif;
+  color: #8a8a8a;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+/* line 423, app/sass/main.scss */
+.article_cut {
+  grid-area: cut;
+  margin-top: 10px;
+  font-family: "ubunturegular", "ubuntu_cr", "Arial", sans-serif;
+  color: #2a2b2e;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+/* line 432, app/sass/main.scss */
+.arrow {
+  color: #248cec;
+}
+
+/* line 436, app/sass/main.scss */
+.article_link {
+  color: #2a2b2e;
+}
+
+/* line 440, app/sass/main.scss */
+.article_link:hover, .article_link:visited:hover {
+  text-decoration: none;
+  color: #248cec;
+}
+
+/* line 443, app/sass/main.scss */
+.article_link:hover .arrow, .article_link:visited:hover .arrow {
+  color: #989fb3;
+}
+
+/* line 448, app/sass/main.scss */
+.article_link:visited, .article_link:focus {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* line 453, app/sass/main.scss */
+.article_sprite {
+  object-fit: none;
+  width: 32px;
+  height: 32px;
+}
+
+/* line 459, app/sass/main.scss */
+.article_sprite__settings {
+  object-position: -47px -5px;
+}
+
+/* line 463, app/sass/main.scss */
+.article_sprite__params {
+  object-position: -5px -5px;
+}
+
+/* line 467, app/sass/main.scss */
+.article_sprite__truck {
+  height: 26px;
+  object-position: -89px -5px;
+}
+
+/* Middle-top area start*/
+/* line 474, app/sass/main.scss */
+.middle-top {
+  background-color: #2a2d32;
+  color: #fff;
+  padding: 40px 0;
+}
+
+/*Our Services section*/
+/* line 482, app/sass/main.scss */
+.services_headline {
+  color: #fff;
+  font-family: "ubunturegular", "ubuntu_cr", "Arial", sans-serif;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+/* line 489, app/sass/main.scss */
+.services_picsblock {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+/* line 495, app/sass/main.scss */
+.services_figure {
+  position: relative;
+}
+
+/* line 499, app/sass/main.scss */
+.services_img {
+  height: 260px;
+  width: 260px;
+}
+
+/* line 504, app/sass/main.scss */
+.services_figcaption {
+  font-family: "ubunturegular", "ubuntu_cr", "Arial", sans-serif;
+  color: #fff;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  padding-top: 36px;
+}
+
+/* line 513, app/sass/main.scss */
+.services_link {
+  position: absolute;
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+/* line 521, app/sass/main.scss */
+.services_figure:hover figcaption {
+  color: #f4b60d;
+}
+
+/* line 526, app/sass/main.scss */
+.services_mask {
+  width: 100%;
+  height: 260px;
+  background-color: rgba(36, 140, 236, 0.8);
+  top: 0;
+  left: 0;
+  position: absolute;
+  line-height: 260px;
+  text-align: center;
+  color: #fff;
+  font-size: 60px;
+}
+
+/* CSS-only blue mask implementation
+.services_figure:hover::after {
+  width: 100%;
+  height: 260px;
+  background-color: rgba(36,140,236,.8);
+  content: '+';
+  top: 0;
+  left: 0;
+  position: absolute;
+  line-height: 260px;
+  text-align: center;
+  color: #fff;
+  font-size: 60px;
+}
+
+*/
+/*Latest news and banners place i.e. accordion*/
+/* line 558, app/sass/main.scss */
+.middle-middle {
+  background-color: #f7f7f7;
+  padding: 50px 0 50px;
+}
+
+/* line 563, app/sass/main.scss */
+.newsBlock {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+/* line 569, app/sass/main.scss */
+.newsBlock_headline {
+  font-family: "ubunturegular", "ubuntu_cr", "Arial", sans-serif;
+  color: #2a2d32;
+  font-size: 24px;
+  line-height: 20px;
+}
+
+/* line 576, app/sass/main.scss */
+.newsBlock_articles {
+  width: 47.5%;
+}
+
+/* line 580, app/sass/main.scss */
+.newsBlock_banners {
+  width: 47.5%;
+}
+
+/* line 584, app/sass/main.scss */
+.newsArticle {
+  display: flex;
+  margin-top: 20px;
+}
+
+/* line 589, app/sass/main.scss */
+.newsArticle_pic {
+  min-width: 150px;
+  min-height: 150px;
+  position: relative;
+  background-repeat: no-repeat;
+}
+
+/* line 596, app/sass/main.scss */
+.newsArticle_pic__top {
+  background-image: url(../img/article-1.jpg);
+}
+
+/* line 600, app/sass/main.scss */
+.newsArticle_pic__bottom {
+  background-image: url(../img/article-2.jpg);
+}
+
+/* line 604, app/sass/main.scss */
+.newsArticle_date {
+  position: absolute;
+  top: 10px;
+  left: -16px;
+}
+
+/* line 610, app/sass/main.scss */
+.date_month {
+  width: 40px;
+  height: 40px;
+  background-color: #248cec;
+  text-align: center;
+  line-height: 40px;
+  font-family: "ubunturegular", "ubuntu_cr", "Arial", sans-serif;
+  color: #fff;
+  font-size: 15px;
+}
+
+/* line 621, app/sass/main.scss */
+.date_day {
+  width: 40px;
+  height: 40px;
+  background-color: #f4b60d;
+  text-align: center;
+  line-height: 40px;
+  font-family: "ubunturegular", "ubuntu_cr", "Arial", sans-serif;
+  color: #2a2d32;
+  font-size: 18px;
+}
+
+/* line 632, app/sass/main.scss */
+.newsArticle_article {
+  padding-left: 30px;
+}
+
+/* line 636, app/sass/main.scss */
+.newsArticle_headline {
+  font-family: "ubunturegular", "ubuntu_cr", "Arial", sans-serif;
+  color: #2a2d32;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+/* line 643, app/sass/main.scss */
+.newsArticle_link, .newsArticle_link:visited {
+  color: #2a2d32;
+  text-decoration: none;
+}
+
+/* line 648, app/sass/main.scss */
+.newsArticle_link:hover, .newsArticle:visited:hover, .newsArticle_link:active, .newsArticle_link:focus {
+  text-decoration: none;
+  color: #248cec;
+}
+
+/* line 653, app/sass/main.scss */
+.newsArticle_meta {
+  font-family: "Arial", "ubunturegular", "ubuntu_cr", sans-serif;
+  color: #9d9d9d;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+/* line 660, app/sass/main.scss */
+.newsArticle_author, .newsArticle_numberComments {
+  font-family: "Arial", "ubunturegular", "ubuntu_cr", sans-serif;
+  color: #0187f4;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+/* line 667, app/sass/main.scss */
+.newsArticle_text {
+  font-family: "Arial", "ubunturegular", "ubuntu_cr", sans-serif;
+  color: #8a8a8a;
+  font-size: 13px;
+  line-height: 20px;
+  padding-top: 20px;
+}
+
+/* Accordion start*/
+/* line 677, app/sass/main.scss */
+.accordion_panel {
+  height: 40px;
+  line-height: 40px;
+}
+
+/* line 682, app/sass/main.scss */
+.accordion_plus {
+  display: inline-block;
+  width: 40px;
+  text-align: center;
+  background-color: #fff;
+  color: #2a2d32;
+  font-size: 13px;
+  border: 1px solid #e8e8e8;
+  float: left;
+}
+
+/* line 693, app/sass/main.scss */
+.accordion_heading {
+  padding-left: 50px;
+  background-color: #fff;
+  border: 1px solid #e8e8e8;
+  color: #2a2d32;
+  font-family: "ubunturegular", "ubuntu_cr", "Arial", sans-serif;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+/* line 703, app/sass/main.scss */
+.accordion_article {
+  font-family: "Arial", "ubunturegular", "ubuntu_cr", sans-serif;
+  color: #8a8a8a;
+  font-size: 13px;
+  line-height: 20px;
+  padding: 30px 0px 40px 40px;
+}
+
+/* line 711, app/sass/main.scss */
+.accordion_section {
+  margin-bottom: 5px;
+  height: 42px;
+  overflow: hidden;
+}
+
+/* line 717, app/sass/main.scss */
+.accordion_section {
+  cursor: pointer;
+}
+
+/*
+.accordion_section__closed:hover {
+  height: 180px;
+
+  .accordion_plus, .accordion_heading {
+    color: #fff;
+    background-color: $contrastColor;
+  }
+}
+
+.accordion_section__closed {
+  height: 42px;
+  overflow: hidden;
+  transition: .5s;
+  transition-delay: .2s;
+}
+*/
+/* Partners block */
+/* line 745, app/sass/main.scss */
+.partners {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 85px;
+  padding-bottom: 85px;
+}
+
+/* line 752, app/sass/main.scss */
+.partners_pic {
+  object-fit: none;
+}
+
+/* line 756, app/sass/main.scss */
+.partners_pic__1 {
+  width: 143px;
+  height: 62px;
+  object-position: -5px -47px;
+}
+
+/* line 762, app/sass/main.scss */
+.partners_pic__2 {
+  width: 143px;
+  height: 62px;
+  object-position: -5px -119px;
+}
+
+/* line 768, app/sass/main.scss */
+.partners_pic__3 {
+  width: 184px;
+  height: 64px;
+  object-position: -5px -191px;
+}
+
+/* line 774, app/sass/main.scss */
+.partners_pic__4 {
+  width: 143px;
+  height: 62px;
+  object-position: -241px -5px;
+}
+
+/* line 780, app/sass/main.scss */
+.partners_pic__5 {
+  width: 143px;
+  height: 62px;
+  object-position: -158px -77px;
+}
+
+/* line 786, app/sass/main.scss */
+.partners_pic__6 {
+  width: 143px;
+  height: 62px;
+  object-position: -199px -149px;
+}
+
+/* line 792, app/sass/main.scss */
+.bottom {
+  background-color: #2a2d32;
+}
+
+/* line 796, app/sass/main.scss */
+.bottomMenu {
+  display: flex;
+  color: #fff;
+  line-height: 24px;
+  padding-top: 60px;
+  padding-bottom: 80px;
+}
+
+/* line 804, app/sass/main.scss */
+.bottomMenu_header {
+  text-transform: uppercase;
+  font-family: "ubunturegular", "ubuntu_cr", "Arial", sans-serif;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+/* line 811, app/sass/main.scss */
+.bottomMenu_item {
+  width: 260px;
+  margin-right: 40px;
+}
+
+/* line 816, app/sass/main.scss */
+.bottomMenu_submenu {
+  font-family: "Arial", "ubunturegular", "ubuntu_cr", sans-serif;
+  color: #828385;
+  font-size: 13px;
+  line-height: 36px;
+}
+
+/* line 823, app/sass/main.scss */
+.bottomMenu_submenuItem {
+  border-top: 1px solid #393c40;
+}
+
+/* line 827, app/sass/main.scss */
+.bottomMenu_submenuItem:first-child {
+  margin-top: 35px;
+  border-top: none;
+}
+
+/* line 832, app/sass/main.scss */
+.bottomMenu_link,
+.bottomMenu_link:hover,
+.bottomMenu_link:visited,
+.bottomMenu_link:visited:hover,
+.bottomMenu_link:active,
+.bottomMenu_link:focus {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* line 842, app/sass/main.scss */
+.bottomMenu_link:hover, .bottomMenu_link:visited:hover {
+  color: #248cec;
+}
+
+/* line 846, app/sass/main.scss */
+.footer {
+  background-color: #35383c;
+  color: #6f7073;
+}
+
+/* line 851, app/sass/main.scss */
+.footer_wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+/* line 858, app/sass/main.scss */
+.contacts {
+  display: flex;
+}
+
+/* line 862, app/sass/main.scss */
+.contacts_div {
+  margin-right: 50px;
+}
+
+/* line 866, app/sass/main.scss */
+.contacts_link,
+.contacts_link:hover,
+.contacts_link:visited,
+.contacts_link:visited:hover,
+.contacts_link:active,
+.contacts_link:focus {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* line 876, app/sass/main.scss */
+.location_pic {
+  object-fit: none;
+  width: 12px;
+  height: 16px;
+  object-position: -131px -5px;
+}
+
+/* line 883, app/sass/main.scss */
+.tel_pic {
+  object-fit: none;
+  width: 10px;
+  height: 16px;
+  object-position: -179px -5px;
+}
+
+/* line 890, app/sass/main.scss */
+.mail_pic {
+  object-fit: none;
+  width: 16px;
+  height: 12px;
+  object-position: -153px -5px;
+}
