@@ -1,0 +1,17 @@
+{
+  "name": "hw19-20",
+  "description": "Homework 19-20 for Go IT Frontend",
+  "main": "index.html",
+  "authors": [
+    "Anton Sydorenko"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/eutohius/GoIT_FE7",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
